@@ -4,7 +4,7 @@ import numpy as np
 # Read image
 resize = cv2.imread("SAM5987.JPG")
 
-img = cv2.resize(resize, (1000,1000))
+img = cv2.resize(resize, (500,500))
 
 # Convert to HSV
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV).astype(np.float32)
