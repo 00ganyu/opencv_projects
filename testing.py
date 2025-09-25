@@ -21,7 +21,6 @@ h, s, v = cv2.split(hsv)
 
 hue_shift  = random.randint(20, 179) 
 hue_freq   = random.uniform(5, 60)     
-
 sat_boost  = random.uniform(0.5, 2.5)   
 val_invert = random.uniform(0.1, 1.0)   
      
