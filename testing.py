@@ -9,6 +9,19 @@ h, s, v = cv2.split(hsv)
 
 hue_shift  = random.randint(20, 179)   
 hue_freq   = random.uniform(5, 60)      
+
+
+Resize = cv2.imread("SAM5987.JPG")
+img = cv2.resize(Resize, (1500,1000))
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV).astype(np.float32)
+
+
+h, s, v = cv2.split(hsv)
+
+
+hue_shift  = random.randint(20, 179) 
+hue_freq   = random.uniform(5, 60)     
+
 sat_boost  = random.uniform(0.5, 2.5)   
 val_invert = random.uniform(0.1, 1.0)   
      
