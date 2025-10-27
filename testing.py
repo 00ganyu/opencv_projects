@@ -35,6 +35,6 @@ output = cv2.GaussianBlur(out, (3,3), cv2.BORDER_DEFAULT)
 alpha = random.uniform(0.4, 0.7)  
 final = cv2.addWeighted(img, 1 - alpha, output, alpha, 0)
 
-cv2.imshow("Random Trippy Effect", final)
+cv2.imshow("Random Warp", final)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
